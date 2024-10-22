@@ -10,9 +10,9 @@ dotfile-sync <remote-host> <remote-path> <local-path>
 
 Example:
 
-![example](assets/example.mp4)
+![example](assets/example.gif)
 
-which is roughly equivalent to (`.zshrc` for example):
+which is roughly equivalent to:
 
 ```bash
 # Make tmpdirs
