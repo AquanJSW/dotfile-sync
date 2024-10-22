@@ -36,3 +36,9 @@ cp ~/.zshrc ~/.zshrc.dsbak
 #   sync
 cp $tmp/local/.zshrc ~/.zshrc
 ```
+
+## Install
+
+```bash
+pipx install dotfile-sync
+```
