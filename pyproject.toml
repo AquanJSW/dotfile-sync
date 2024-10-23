@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dotfile_sync"
-version = "0.0.4"
+version = "0.0.5"
 authors = [{ name = 'aquanjsw', email = 'zhdlcc@gmail.com' }]
 description = 'dotfile sycn auxiliary tool for scp'
 readme = 'README.md'
