@@ -45,7 +45,7 @@ def ask_interactive(remote_path, local_path):
         if answer in ('y', ''):
             return interactive(remote_path, local_path)
         elif answer == 'n':
-            return False
+            return remote_path
         else:
             continue
 
@@ -87,6 +87,11 @@ def main():
     parser.add_argument('remote_path')
     parser.add_argument('local_path')
     args = parser.parse_args()
+    if not os.path.exists(args.local_path):
+        print(f'Warn: {args.local_path} does not exist, create it')
+        os.makedirs(os.path.dirname(args.local_path), exist_ok=True)
+        with open(args.local_path, 'w') as f:
+            pass
     sync(args.remote_host, args.remote_path, args.local_path)
 
 

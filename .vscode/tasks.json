@@ -7,7 +7,7 @@
       "label": "Build",
       "type": "shell",
       "command": "rm -rf dist && python -m build"
-    }
+    },
     {
       "label": "Publish to TestPyPi",
       "type": "shell",
